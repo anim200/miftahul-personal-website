@@ -1,0 +1,404 @@
+*{
+   box-sizing:border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+body{
+   margin:0;
+   background-color: WHITE;
+
+}
+h1{
+
+   font-size:2.5 rem;
+   text-align: center;
+
+   
+}
+a{
+   color:#EED5AE;
+   text-decoration:none;
+}
+
+.navbar{
+   background-color:#970119;
+   text-align:center;
+}
+.navlog{
+   text-align:top-right;
+   height:50px;
+   width:10px;
+}
+.navbarmenu{
+   
+   flex-direction:row;
+   text-transform: uppercase;
+   text-align:right;
+   padding-right:50px;
+   border-radius: 3px;
+   
+   
+
+}
+.navbar h1{
+   color:rgb(208, 133, 20);
+   text-align: top;
+   text-align: center;
+}
+.navbarmenu a:hover{
+   background-color:grey;
+}
+.navbarmenu a{
+   padding:10px;
+   margin:20px 7px;
+   background-color: transparent ;
+}
+/* profile design starts from here */
+.prfl{
+   padding:130px 100px;
+   background-color: antiquewhite;
+   position:relative;
+   text-align:center;
+
+}
+.desc h1{
+   font-family: 'Gloock', serif;
+   font-size: 3rem;
+}
+.prfl p{
+   color:gray;
+   margin:0 auto 20px auto;
+   text-align: center;
+   width:90%;
+
+
+}
+.prfl .htmlicon{
+   
+   right:700px;
+   top:20px;
+   transition:transform 2s;
+}
+.prfl .htmlicon:hover{
+   transform: rotate(360deg);
+}
+.prfl .cssicon{
+   
+   right:700px;
+   top:20px;
+   transition:transform 2s;
+}
+.prfl .cssicon:hover{
+   transform: rotate(360deg);
+}
+
+
+
+/* profile deisgn endls here*/
+/*about me design starts here*/
+
+.aboutme{
+   background-color: orange;
+   padding: 1%7%;
+   font-family:  font-family: 'Roboto', sans-serif;
+   text-align:center;
+}
+.aboutme::after{
+   clear:both;
+   display: table;
+
+   content:'';
+}
+.dotted-hr{
+   border:dotted 6px white;
+   border-bottom:none;
+   margin:20px auto;
+   width:70px;
+
+}
+.image img{
+   border:5px solid white;
+   border-radius: 50%;
+   height:220px;
+   width:200px;
+
+
+}
+.aboutme p{
+
+   text-align:left;
+}
+.aboutme a{
+   font-size: 1.2 rem;
+}
+.cv-button{
+   text-align: left;
+   background-color: yellow;
+   border:none;
+   border-radius: 12px;
+   font-size: 1 rem;
+   cursor:pointer;
+   padding:15px;
+}
+/*about me design ends here*/
+/*education section starts here*/
+.main{
+   
+ }
+ 
+.education{
+   
+   width:30%;
+   
+   
+   
+
+}
+.skill{
+   
+   
+   
+   
+   
+
+}
+
+ .cards{
+   width:30%;
+   background-color:dimgrey;
+   display:inline-block;
+   border-radius: 10px;
+   transition:0.3s;
+   right:500px;
+   flex-direction:column;
+   margin-left:170px;;
+   
+   
+   
+}
+
+ .cards:hover{
+   box-shadow:0 4px 8px 5px black;
+
+ }
+ .cards::after{
+   clear:both;
+   display:table;
+   content:' ';
+
+ }
+ .card-icon{
+   text-align:center;
+
+
+ }
+ .card-icon img{
+   margin-top: 20px;
+   width:100px;
+
+
+ }
+ .roundedimage{
+   border:5px solid white;
+   border-radius:50%;
+   padding:15px;
+ }
+ .card-title h2{
+   background-color: darkgray;
+   text-align:center;
+   padding:10px;
+ }
+ .main{
+   background-color:crimson;
+ }
+ .f{
+ width:50px;
+ margin-left: 10px;
+   
+            
+ }
+ .f img{
+   border:5px solid white;
+   border-radius:50%;
+   padding:15px;
+ }
+ .y{
+   width:50px;
+   margin-left: 10px;
+     
+              
+   }
+   .y img{
+     border:5px solid white;
+     border-radius:50%;
+     padding:15px;
+   }
+   .s{
+      width:50px;
+      margin-left: 10px;
+        
+                 
+      }
+      .s img{
+        border:5px solid white;
+        border-radius:50%;
+        padding:15px;
+      }
+      .l{
+         width:50px;
+         margin-left: 10px;
+           
+                    
+         }
+         .l img{
+           border:5px solid white;
+           border-radius:50%;
+           padding:15px;
+         }
+.footer{
+   background-color:black;
+}
+
+.para{
+   color:white;
+   margin-left:10px;
+}
+.para2{
+   color:white;
+   text-align:right;
+   margin-right: 10px;
+}
+.skill-container{
+   padding-right:45px;
+
+}
+.skill-container li{
+   list-style: none;
+   font-weight: bold;
+   margin:30px 10px;
+   position:relative;
+
+
+}
+.skill-container li::before{
+   content:'';
+   position:absolute;
+   top:calc(100% + 5px);
+   width:100%;
+   height:10px;
+   left:0;
+   background-color:red;
+   border-radius: 1000px;
+}
+.skill-container li::after{
+   content:'';
+   position:absolute;
+   top:calc(100% + 5px);
+   width:0;
+   height:10px;
+   left:0;
+   background-color:darkblue;
+   border-radius: 1000px;
+   animation-duration: 3s;
+   animation-delay:2s;
+   animation-timing-function: linear;
+   animation-fill-mode: forward;
+   animation-iteration-count: infinite;
+}
+.skill-container li.HTML::after{
+   animation-name: HTML;
+
+}
+@keyframes HTML{
+    to{
+      width:90%;
+    }
+
+}
+.skill-container li.CSS::after{
+   animation-name:CSS;
+
+}
+@keyframes CSS{
+    to{
+      width:85%;
+    }
+
+}
+.skill-container li.JAVASCRIPT::after{
+   animation-name: JAVASCRIPT;
+
+}
+@keyframes JAVASCRIPT{
+    to{
+      width:75%;
+    }
+
+}
+.skill-container li.BOOTSTRAP::after{
+   animation-name:BOOTSTRAP;
+
+}
+@keyframes BOOTSTRAP{
+    to{
+      width:80%;
+    }
+
+}
+.skill-container li.REACT::after{
+   animation-name: REACT;
+
+}
+@keyframes REACT{
+    to{
+      width:40%;
+    }
+
+}
+.skill-container li.JQUERY::after{
+   animation-name: JQUERY;
+
+}
+@keyframes JQUERY{
+    to{
+      width:60%;
+    }
+
+}
+.skill-container li.EMPRESS::after{
+   animation-name: EMPRESS;
+
+}
+@keyframes EMPRESS{
+    to{
+      width:55%;
+    }
+
+}
+.skill-container li.NODE::after{
+   animation-name:NODE;
+
+}
+@keyframes NODE{
+    to{
+      width:65%;
+    }
+
+}
+.skill-container li.GITHUB::after{
+   animation-name: GITHUB;
+
+}
+@keyframes GITHUB{
+    to{
+      width:90%;
+    }
+
+}
+
+
+
+
+ 
+
+/*education section ends hers*/
